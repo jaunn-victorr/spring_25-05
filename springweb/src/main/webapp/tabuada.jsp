@@ -11,8 +11,8 @@
     <body>
         <h1>Tabuada</h1>
         <ul>
-        <c:forEach var="pos" begin="0" end="10">
-            <li>${pos}</li>
+        <c:forEach var="valor" items="${resultado}">
+            <li>${valor}</li>
         </c:forEach>
         </ul>
     </body>

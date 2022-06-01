@@ -12,12 +12,12 @@ public class HomeController {
     }
 
     @RequestMapping("/tabuada")
-    public tabuada(Model model) {
+    public String tabuada(Model model) {
         int[] resultado = new int[10];
         for(int pos = 0;pos < 10;pos++){
             resultado [pos] = (pos + 1) * 2;
         }
-        model.addAttribute("resultado", resultado)
+        model.addAttribute("resultado", resultado);
         return "tabuada.jsp";
     }
 }
