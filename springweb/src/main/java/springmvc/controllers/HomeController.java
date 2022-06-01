@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 public class HomeController {
     @RequestMapping("/")
     public String index() {
-        return "index.jsp";
+        return "index";
     }
 
     @RequestMapping("/tabuada")
@@ -18,6 +18,6 @@ public class HomeController {
             resultado [pos] = (pos + 1) * 2;
         }
         model.addAttribute("resultado", resultado);
-        return "tabuada.jsp";
+        return "tabuada";
     }
 }
